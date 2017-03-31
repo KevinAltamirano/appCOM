@@ -12,8 +12,16 @@ namespace ClientCom
         {
             ServerComLib.ServerObject obj = new ServerComLib.ServerObject();
             obj.getMessages();
-            Console.WriteLine(obj.ReturnSomething());
+            string result = Convert.ToString(obj.ReturnSomething());
+            Console.WriteLine(result);
             Console.ReadKey();
+        }
+
+        private static string SByteArrayToString(sbyte[] sbytes)
+        {
+            //Convert sbyte[] to byte[]
+            byte[] byteData = Array.ConvertAll(sbytes, (a) => (byte)a);
+            return Encoding.ASCII.GetString(byteData);
         }
     }
 }

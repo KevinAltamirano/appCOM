@@ -27,6 +27,6 @@ STDMETHODIMP CServerObject::getMessages()
 STDMETHODIMP CServerObject::ReturnSomething(CHAR* value)
 {
 	// TODO: Add your implementation code here
-	value = "inguesu";
+	value = strdup("algo chido");
 	return S_OK;
 }
