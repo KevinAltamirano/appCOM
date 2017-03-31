@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{70ac089a-2d52-4a48-b02b-06b005030fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos generados">
+      <UniqueIdentifier>{a8629ec2-3e95-419c-9007-3970afe26ad9}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="appCOMps.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="appCOM_i.c">
+      <Filter>Archivos generados</Filter>
+    </ClCompile>
+    <ClCompile Include="appCOM_p.c">
+      <Filter>Archivos generados</Filter>
+    </ClCompile>
+    <ClCompile Include="dlldata.c">
+      <Filter>Archivos generados</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+// appCOM.idl : código fuente IDL de appCOM
+//
+
+// La herramienta MIDL procesa este archivo y
+// genera la biblioteca de tipos (appCOM.tlb) y el código de serialización.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(AAE3CEEC-766C-4401-85E6-4FD9C5E6BC12),
+	version(1.0),
+]
+library appCOMLib
+{
+	importlib("stdole2.tlb");
+};
+
