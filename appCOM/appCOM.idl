@@ -15,6 +15,7 @@ import "ocidl.idl";
 	pointer_default(unique)
 ]
 interface Imail : IDispatch{
+	[id(1)] HRESULT ObtenerMensajes([out] CHAR* Mensajes);
 };
 [
 	uuid(AAE3CEEC-766C-4401-85E6-4FD9C5E6BC12),

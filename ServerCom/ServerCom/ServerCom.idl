@@ -1,0 +1,37 @@
+// ServerCom.idl : IDL source for ServerCom
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ServerCom.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(B82ED3A3-FF52-47B4-A247-28DBB3274FA0),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IServerObject : IDispatch{
+	[id(1)] HRESULT ObtenerMensajes([out] CHAR* Mensajes);
+	[id(2)] HRESULT getMessages();
+	[id(3)] HRESULT ReturnSomething([out, retval] CHAR* value);
+};
+[
+	uuid(A6119F80-99A7-46E0-B17E-52E3E3E1D140),
+	version(1.0),
+]
+library ServerComLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(85DDC3D8-F732-4907-998A-00F57DE91E26)		
+	]
+	coclass ServerObject
+	{
+		[default] interface IServerObject;
+	};
+};
+

@@ -53,6 +53,7 @@ public:
 
 
 
+	STDMETHOD(ObtenerMensajes)(CHAR* Mensajes);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(mail), Cmail)
