@@ -8,11 +8,27 @@ import "oaidl.idl";
 import "ocidl.idl";
 
 [
+	object,
+	uuid(FEEC0E3F-80B6-49F9-82E6-93AC2503CB42),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface Imail : IDispatch{
+};
+[
 	uuid(AAE3CEEC-766C-4401-85E6-4FD9C5E6BC12),
 	version(1.0),
 ]
 library appCOMLib
 {
 	importlib("stdole2.tlb");
+	[
+		uuid(52F58C21-8478-47B1-A951-88EA1D02DFAB)		
+	]
+	coclass mail
+	{
+		[default] interface Imail;
+	};
 };
 

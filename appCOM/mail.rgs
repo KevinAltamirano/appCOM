@@ -1,0 +1,16 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {52F58C21-8478-47B1-A951-88EA1D02DFAB} = s 'mail Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{AAE3CEEC-766C-4401-85E6-4FD9C5E6BC12}'
+			Version = s '1.0'
+		}
+	}
+}
