@@ -30,3 +30,13 @@ STDMETHODIMP CServerObject::ReturnSomething(CHAR* value)
 	value = strdup("algo chido");
 	return S_OK;
 }
+
+
+STDMETHODIMP CServerObject::DevuelveAlgo(BSTR* value)
+{
+	// TODO: Add your implementation code here
+	char val[100] = "la wea fome";
+	CComBSTR bstr(val);
+	*value = bstr.Detach();
+	return S_OK;
+}

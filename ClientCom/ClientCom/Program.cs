@@ -12,7 +12,8 @@ namespace ClientCom
         {
             ServerComLib.ServerObject obj = new ServerComLib.ServerObject();
             obj.getMessages();
-            string result = Convert.ToString(obj.ReturnSomething());
+            //string result = Convert.ToString(obj.ReturnSomething());
+            string result = obj.DevuelveAlgo();
             Console.WriteLine(result);
             Console.ReadKey();
         }

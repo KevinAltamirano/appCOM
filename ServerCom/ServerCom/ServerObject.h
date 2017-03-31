@@ -56,6 +56,7 @@ public:
 	STDMETHOD(ObtenerMensajes)(CHAR* Mensajes);
 	STDMETHOD(getMessages)();
 	STDMETHOD(ReturnSomething)(CHAR* value);
+	STDMETHOD(DevuelveAlgo)(BSTR* value);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(ServerObject), CServerObject)

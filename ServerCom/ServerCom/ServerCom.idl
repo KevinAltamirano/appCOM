@@ -18,6 +18,7 @@ interface IServerObject : IDispatch{
 	[id(1)] HRESULT ObtenerMensajes([out] CHAR* Mensajes);
 	[id(2)] HRESULT getMessages();
 	[id(3)] HRESULT ReturnSomething([out, retval] CHAR* value);
+	[id(4)] HRESULT DevuelveAlgo([out, retval] BSTR* value);
 };
 [
 	uuid(A6119F80-99A7-46E0-B17E-52E3E3E1D140),
